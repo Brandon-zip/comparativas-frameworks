@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchUsers } from './services/usersApi';
 import UserCard from './components/UserCard';
+import reactLogo from './assets/react.svg';
 import './App.css';
 
 export default function App() {
@@ -48,7 +49,8 @@ export default function App() {
   return (
     <main className="container">
       <header className="app-header">
-        <h1>Directorio de Usuarios (React)</h1>
+        <img src={reactLogo} alt='Logo React' className='framework-logo'></img>
+        <h1>Directorio de Usuarios</h1>
         <span className="fav-counter">Favoritos: {favoriteIds.length}</span>
       </header>
 
